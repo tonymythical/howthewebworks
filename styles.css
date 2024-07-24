@@ -1,0 +1,119 @@
+/*
+
+CSS rules you may need for reference:
+
+- font-family
+    - Arial, sans-serif
+- line-height
+- color
+- margin
+- padding
+- background-color
+- border-radius
+- border-left
+- border-bottom
+- margin-top
+- padding-left
+- padding-bottom
+- width
+- height
+- margin-bottom
+- font-size
+
+*/
+
+/* Write your CSS code here */
+
+header h1 {
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section {
+  background-color: rgba(167, 167, 167, 0.137);
+  border-radius: 3px;
+  padding: 25px;
+  margin: 25px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+h2 {
+  border-bottom: solid;
+  border-left: solid;
+  border-color: lightskyblue;
+  border-width: 2px;
+}
+
+main {
+  padding: 15px;
+}
+
+h1,
+h2,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tr {
+  background-color: rgba(167, 167, 167, 0.137);
+  border-bottom: solid;
+  border-color: lightgray;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+p::first-letter {
+  font-size: 125%;
+  color: blue;
+  font-weight: 700;
+}
+
+p,
+table,
+img {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+p span {
+  display: inline-block;
+  animation-duration: 3s;
+  animation-name: growshrink;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes growshrink {
+  25%,
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 200%;
+    color: magenta;
+  }
+}
